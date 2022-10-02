@@ -81,7 +81,7 @@ public class TestFive {
         driver.findElement(By.xpath("//input[@value='Other']")).click();
         driver.findElement(By.xpath("//input[@value='0 - 5']")).click();
         driver.findElement(By.xpath("//div[@class='w-8/12 smtablet:w-full left-input mr-20 pr-30 border-r-4 border-black smtablet:border-r-0 smtablet:mr-0 smtablet:pr-0']//button")).click();
-//            driver.findElement(By.xpath("//div[@class='input-body px-10 py-20']//input[@value='Male']")).click();
+//          driver.findElement(By.xpath("//div[@class='input-body px-10 py-20']//input[@value='Male']")).click();
         String text = driver.findElement(By.xpath("//span[@class='genderbutton']")).getText();
         String age = driver.findElement(By.xpath("//span[@class='groupradiobutton']")).getText();
         Assert.assertEquals("Other", text);
